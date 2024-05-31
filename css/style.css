@@ -39,23 +39,21 @@ a {
 
 body{
   background-color: #fff;
+  height: 100vh;
 }
 
 .container{
-  height: 100vh;
 }
 
 .header {
   padding:10px;
   background-color: var(--background-color);
-  margin-bottom: 10px;
-  height: 100%;
-  width: 100%;
   display: flex;
   justify-content: center;
   
   & .logo {
-    width: 100px;
+    height: 68px;
+    width: 103px;
     opacity: 0.6;
   }
   & .title {
@@ -66,15 +64,14 @@ body{
 
 
 .main {
-  padding: 20px;
+  padding: 30px;
 
   & .main__section {
     background-color: var(--background-color);
-    padding: 20px;
+    padding: 40px;
     border-radius: 8px;
     border-color: var(--border-main);
     box-shadow: 0 6px 10px -6px rgba(0,0,0,0.5);
-    height: 100vh;
   }
 
   & .main__numeros {
@@ -89,31 +86,35 @@ body{
     line-height: 1;
     text-align: center;
     margin-bottom: 10px;
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 600;
   }
   & .main__num-uno {
-    height: 48px;
+    height: 65px;
     border-radius: 8px;
     background-color: var(--background-input);
     border-color: var(--border-cajas);
     padding-left: 20px;
+    font-size: 20px;
   }
   & .main__num-dos {
-    height: 48px;
+    height: 65px;
     border-radius: 8px;
     background-color: var(--background-input);
     border-color: var(--border-cajas);
     padding-left: 20px;
+    font-size: 20px;
   }
   & .main__botones {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 20px;
     align-items: center;
     margin-bottom: 20px;
+    padding: 20px;
   }
   & .botones__btn {
-    padding: 10px 25px;
+    padding: 15px 35px;
     background-color: var(--background-btn);
     color: #000;
     text-align: center;
@@ -127,9 +128,10 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap:30px;
   }
   & .resultado__subtitle {
-    font-size: 16px;
+    font-size: 24px;
     margin-bottom: 5px;
   }
   & .resultado__caja-resultado {
@@ -140,5 +142,6 @@ body{
     text-align: center;
     font-weight: 400;
     border-color: var(--border-cajas);
+    font-size: 24px;
   }
 }

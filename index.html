@@ -34,11 +34,11 @@
 
         <!-- links de estilos -->
         <link rel="stylesheet" href="css/style.css" />
+    
 
         <!-- Se cambia el tema de algunos navegadores -->
         <meta name="theme-color" content="#fafafa" />
         <!-- Código de las plataformas de Análisis -->
-        <script></script>
         <!-- Scripts a cargar antes de la renderización -->
         <script src="preloader.js"></script>
     </head>
@@ -67,21 +67,33 @@
                             type="number"
                             placeholder="segundo número"
                             id="segundoNumero"
-                            name="segundoNumero">
+                            name="segundoNumero"
                         />
                     </section>
 
                     <section class="main__botones">
-                        <a href="#" class="botones__btn">Sumar</a>
-                        <a href="#" class="botones__btn">Reset</a>
+
+                        <section class="sumar__restar" id="sumar-restar">
+                            <a href="#" class="botones__btn" id="btnSumar">+</a>
+                            <a href="#" class="botones__btn" id="btnRestar">-</a>
+                        </section>
+
+                        <section class="multi__dividir" id="multi-dividir">
+                            <a href="#" class="botones__btn" id="btnMultiplicar">x</a>
+                            <a href="#" class="botones__btn" id="btnDividir">/</a>
+                        </section>
+
+                        <a href="#" class="btn__reset" id="btnReset">Reset</a>
+
                     </section>
 
                     <section class="main__resultado">
                         <h2 class="resultado__subtitle">tu resultado es:</h2>
-                        <h4 class="resultado__caja-resultado">Prueba</h4>
+                        <h4 class="resultado__caja-resultado" id="resultado">Prueba</h4>
                     </section>
                 </section>
             </main>
         </div>
+        <script src="js/main.js"></script>
     </body>
 </html>
